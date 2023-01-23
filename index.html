@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jhaka Naka film production || Desing by Tailwind CSS</title>
+
+   <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon">
+
+   <!-- Google fonts -->
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+   <!-- Tailwind CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  yellow: "#FECC02",
+                  black: "#131313",
+                  gray: "#4E4E4E",
+               },
+               fontFamily: {
+                  montserrat: ["Montserrat", "sans-serif"],
+                  bebasNeue: ["Bebas Neue", "cursive"],
+               }
+            }
+         }
+      }
+   </script>
+
+</head>
+
+<body>
+
+
+   <header class="bg-purple-600 bg-[url('./images/banner.jpg')] bg-cover bg-center h-screen">
+      <div class="fixed bg-green-50 top-0 left-0 right-0 px-5">
+         <nav class=" font-montserrat flex justify-between w-full max-w-7xl mx-auto h-16 items-center  ">
+            <h2 class="text-2xl font-bold">Jhaka Naka Production</h2>
+            <ul class="flex gap-5 font-semibold">
+               <li class="ring-2 ring-blue-500 p-1 rounded-md hover:ring-blue-500"><a href="">About Us</a></li>
+               <li class="ring-2 ring-blue-500 p-1 rounded-md hover:ring-blue-500"><a href="">Our Movies</a></li>
+               <li class="ring-2 ring-blue-500 p-1 rounded-md hover:ring-blue-500"><a href="">Services</a></li>
+            </ul>
+         </nav>
+      </div>
+
+      <div class=" mx-auto w-full max-w-7xl px-5">
+         <div class=" text-white space-y-5 py-48">
+            <h3 class="font-montserrat font-bold text-2xl ">Movie production studio</h3>
+            <h1 class="font-montserrat font-bold text-7xl ">Films made to <br>
+               <span class="text-yellow">Perfection</span>
+            </h1>
+            <p class="font-montserrat ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit <br>
+               tellus,
+               luctus nec ullamcorper
+               mattis,
+               pulvinar dapibus leo.</p>
+            <button
+               class="py-2 px-3 border-2 border-white font-semibold hover:border-yellow hover:bg-yellow hover:text-black transition-all">Discover
+               More</button>
+         </div>
+      </div>
+
+
+   </header>
+
+
+
+
+</body>
+
+</html>
